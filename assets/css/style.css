@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+html {
+    margin: 0;
+}
+
+body {
+    background-color: #080703;
+    color: #e9e5ee;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    padding: 0;
+}
+
+.a-styling {
+    text-decoration: none;
+    color: #e9e5ee;
+}
+
+body li {
+    list-style-type: none;
+}
+
+.font-white {
+    color: #e9e5ee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.active {
+    border-bottom: solid 4px #682860;
+}
+
+.big-item a:hover,
+.small-item a:hover {
+    border-bottom: solid 4px #682860;
+    transition: .5s ease-in-out;
+}
+
+
+/* HEADER */
+
+header {
+    margin: 0;
+}
+
+
+/* TITLE */
+
+#title-logo {
+    text-align: center;
+    font-size: x-large;
+    margin: 0;
+}
+
+#title-logo h1 {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* NAV MENUS */
+
+#dropdown,
+.small-device-menu {
+    display: none
+}
+
+#big-menu {
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: center;
+}
+
+.big-item {
+    display: inline;
+    padding: 8px;
+}
+
+.big-item a {
+    display: inline-block;
+}
+
+
+/*.big-item a,
+.big-item {
+    margin-left: 30px;
+}*/
+
+
+/* CTA */
+
+.cta {
+    background-color: #682860;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+    color: #e9e5ee;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: none;
+}
+
+.cta:hover {
+    background-color: #e9e5ee;
+    color: #682860;
+    transition: .5s ease-in-out;
+}
+
+
+/* HOME PAGE DISPLAY SECTION */
+
+.contain-dis {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    margin-bottom: 2px;
+}
+
+.img-dis {
+    width: 100%;
+    height: 100%;
+}
+
+.header-dis,
+#arrow,
+#scroll-text {
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 10%;
+    text-align: center;
+}
+
+#arrow {
+    top: 70%;
+}
+
+#scroll-text {
+    top: 55%;
+}
+
+.scroll {
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+
+/* FOOTER */
+
+.footer {
+    float: left;
+    display: inline-flex;
+    width: 90%;
+    font-size: 12px;
+    margin-right: 5%;
+    margin-left: 5%;
+    vertical-align: middle;
+}
+
+.footer-sections {
+    width: 33.333%;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#socials {
+    font-size: 25px;
+    display: inline-flex;
+}
+
+#socials li {
+    width: 25%;
+}
+
+
+/* SPECS HTML SECTION */
+
+.hidden {
+    display: none;
+}
+
+
+/* ROCKETS SECTION */
+
+.spec-contain {
+    height: 450px;
+}
+
+.specs-header {
+    font-size: 40px;
+}
+
+.specs-button {
+    position: relative;
+}
+
+
+/* CAROUSEL */
+
+.carousel-movement {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.fa-circle {
+    font-size: 30px;
+    color: #838383;
+    padding: 10px;
+}
+
+.current {
+    color: #e9e5ee;
+}
+
+
+/* SPECS BUTTON */
+
+.specs-button {
+    width: 12%;
+}
+
+
+/* SOLAR SYSTEM */
+
+.planet-dis {
+    height: 600px;
+}
+
+@media screen and (max-width:450px) {
+    /* NAV MENUS */
+    #big-device-nav {
+        display: none;
+    }
+    #dropdown {
+        display: block;
+        border-top: #e9e5ee solid 4px;
+        border-bottom: #e9e5ee solid 4px;
+        height: 64px;
+    }
+    .dropdown-title {
+        font-size: xx-large;
+        margin-bottom: 11.7px;
+        margin-top: 11.7px;
+    }
+    .dropdown-left {
+        float: left;
+        margin-left: 10%;
+    }
+    .dropdown-right {
+        float: right;
+        margin-right: 10%;
+    }
+    #small-device-nav {
+        font-size: larger;
+    }
+    .small-device-menu {
+        padding: 10px;
+        display: none;
+    }
+    .small-item {
+        padding: 10px;
+    }
+    /* CALLOUTS / DISPLAYS */
+    #scroll-text,
+    #arrow {
+        display: none;
+    }
+    .contain-dis {
+        height: 250px;
+    }
+    .header-dis {
+        font-size: 20px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    /* CALLS TO ACTION */
+    .cta {
+        font-size: 15px;
+        padding: 7px;
+        border-radius: 13px;
+    }
+    /* FOOTER */
+    .footer {
+        display: block;
+    }
+    .footer-sections {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        width: auto;
+    }
+    #socials {
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        text-align: center;
+    }
+    #socials li {
+        display: inline;
+        padding: 4px;
+    }
+    #socials li a {
+        display: inline-block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    /* TITLES */
+    #title-logo {
+        height: 100px;
+    }
+    #title-logo h1 {
+        padding-top: 19.5px;
+        margin-top: 0;
+    }
+    /* NAV MENUS */
+    #big-device-nav {
+        display: none;
+    }
+    #dropdown {
+        display: block;
+        border-top: #e9e5ee solid 4px;
+        border-bottom: #e9e5ee solid 4px;
+        height: 64px;
+    }
+    .dropdown-title {
+        font-size: xx-large;
+        margin-bottom: 11.7px;
+        margin-top: 11.7px;
+    }
+    .dropdown-left {
+        float: left;
+        margin-left: 10%;
+    }
+    .dropdown-right {
+        float: right;
+        margin-right: 10%;
+    }
+    #small-device-nav {
+        font-size: larger;
+    }
+    .small-device-menu {
+        padding: 10px;
+        display: none;
+    }
+    .small-item {
+        padding: 10px;
+    }
+    /* CALLOUTS / DISPLAYS */
+    #scroll-text,
+    #arrow {
+        display: none;
+    }
+    .header-dis {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .big-item {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .big-item {
+        padding: 20px;
+    }
+}
