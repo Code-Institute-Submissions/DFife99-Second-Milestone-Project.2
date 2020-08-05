@@ -4,8 +4,8 @@ html {
 }
 
 body {
-    background-color: #080703;
-    color: #e9e5ee;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,7 +16,7 @@ ul {
 
 .a-styling {
     text-decoration: none;
-    color: #e9e5ee;
+    color: #fff;
 }
 
 body li {
@@ -24,7 +24,7 @@ body li {
 }
 
 .font-white {
-    color: #e9e5ee;
+    color: #fff;
 }
 
 h1,
@@ -247,6 +247,7 @@ header {
     font-size: 30px;
     color: #838383;
     padding: 10px;
+    cursor: pointer;
 }
 
 .current {
@@ -265,6 +266,17 @@ header {
 
 .planet-dis {
     height: 600px;
+}
+
+.planet-header {
+    text-align: center;
+    font-size: 40px;
+}
+
+.planet-txt {
+    text-align: center;
+    margin: 10%;
+    font-size: medium;
 }
 
 @media screen and (max-width:450px) {
