@@ -241,6 +241,7 @@ $(document).on('click', '.planet-carousel-7', function() {
     $('#planet-8-moon').css('display', 'none');
 })
 
+// URANUS  MOONS
 $(document).on('click', '.planet-7-moon-carousel-1', function() {
     $('#planet-7-moon-1').css('display', 'block');
     $('#planet-7-moon-2').css('display', 'none');
@@ -314,4 +315,25 @@ $(document).on('click', '.planet-carousel-8', function() {
     $('#planet-6-moon').css('display', 'none');
     $('#planet-7-moon').css('display', 'none');
     $('#planet-8-moon').css('display', 'block');
+    $('#planet-8-moon-1').css('display', 'block');
+})
+
+// NEPTUNE CAROUSEL 
+
+$(document).on('click', '.planet-8-moon-carousel-1', function() {
+    $('#planet-8-moon-1').css('display', 'block');
+    $('#planet-8-moon-2').css('display', 'none');
+    $('#planet-8-moon-3').css('display', 'none');
+})
+
+$(document).on('click', '.planet-8-moon-carousel-2', function() {
+    $('#planet-8-moon-1').css('display', 'none');
+    $('#planet-8-moon-2').css('display', 'block');
+    $('#planet-8-moon-3').css('display', 'none');
+})
+
+$(document).on('click', '.planet-8-moon-carousel-3', function() {
+    $('#planet-8-moon-1').css('display', 'none');
+    $('#planet-8-moon-2').css('display', 'none');
+    $('#planet-8-moon-3').css('display', 'block');
 })
