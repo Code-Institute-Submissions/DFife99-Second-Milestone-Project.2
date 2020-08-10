@@ -190,9 +190,12 @@ header {
     display: inline-flex;
     width: 90%;
     font-size: 12px;
-    margin-right: 5%;
-    margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
     vertical-align: middle;
+    border-top: solid 3.5px white;
 }
 
 .footer-sections {
