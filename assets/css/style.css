@@ -298,6 +298,25 @@ header {
     width: 100%
 }
 
+
+/* LAUNCHES */
+
+.failure {
+    background: url('../images/failure.jpg') no-repeat center center;
+}
+
+.building {
+    background: url('../images/building.jpg') no-repeat center center;
+}
+
+.reused {
+    background: url('../images/reused.jpg') no-repeat center center;
+}
+
+.satelite {
+    background: url('../images/starlink.jpg') no-repeat center center;
+}
+
 @media screen and (max-width:450px) {
     /* NAV MENUS */
     #big-device-nav {
