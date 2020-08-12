@@ -6,12 +6,13 @@ $(document).ready(function() {
             let unixDate = new Date(element.launch_date_unix * 1000);
             let now = new Date().getTime();
             if (element.launch_success === null) {
-                $('#launches').prepend('<div id="spacex-api-' + index + '" class="building"></div>')
+                $('#launches').prepend('<div id="spacex-api-' + index + '"></div>')
+                $('#launches').prepend('<div class="spacex-api-contain"><img src="assets/images/building.jpg" alt="Building" class="spacex-api-image"><div class="building" id="spacex-api-' + index + '"></div></div>')
             } else {
                 if (element.launch_success === false) {
-                    $('#launches').prepend('<div id="spacex-api-' + index + '" class="failure"></div>')
+                    $('#launches').prepend('<div class="spacex-api-contain"><img src="assets/images/failure.jpg" alt="Failed" class="spacex-api-image"><div class="failed" id="spacex-api-' + index + '"></div></div')
                 } else {
-                    $('#launches').prepend('<div id="spacex-api-' + index + '" class="satelite"></div>')
+                    $('#launches').prepend('<div class="spacex-api-contain"><img src="assets/images/starlink.jpg" alt="Starlink" class="spacex-api-image"><div class="starlink" id="spacex-api-' + index + '"></div></div>')
                 }
             }
             if (unixDate > now) {

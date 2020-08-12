@@ -301,20 +301,10 @@ header {
 
 /* LAUNCHES */
 
-.failure {
-    background: url('../images/failure.jpg') no-repeat center center;
-}
-
-.building {
-    background: url('../images/building.jpg') no-repeat center center;
-}
-
-.reused {
-    background: url('../images/reused.jpg') no-repeat center center;
-}
-
-.satelite {
-    background: url('../images/starlink.jpg') no-repeat center center;
+.spacex-api-image {
+    height: 300px;
+    width: 100%;
+    background-image: url(../images/);
 }
 
 @media screen and (max-width:450px) {
