@@ -16,13 +16,6 @@
         (function() {
             emailjs.init("user_WhNbiPUxASZhPaQqIrjvh");
         })();
-
-        emailjs.sendForm('gmail', 'template_wMTie65X', '#contact-form-contain')
-            .then(function(response) {
-                console.log('SUCCESS!', response.status, response.text);
-            }, function(error) {
-                console.log('FAILED...', error);
-            });
     </script>
 </head>
 
@@ -123,16 +116,16 @@
     </header>
 
     <section>
-        <form id="contact-form-contain" onsubmit="return sendMail(this)">
+        <form id="contact-form-contain" onsubmit="return sendMail(this);">
             <input class="contact-form" type="text" name="name" id="name" placeholder="Enter your name here." required>
             <input class="contact-form" type="text" name="email" id="email" placeholder="Enter your email here." required>
-            <label class="contact-form" for="options">Choose an option you wanna talk about:</label>
-            <select class="contact-form" name="options" id="contact-options">
-                    <option class="contact-form" value="launches">Launches</option>
-                    <option class="contact-form" value="specs">Specifications</option>
-                    <option class="contact-form" value="solar-system">Solar System</option>
-                    <option class="contact-form" value="sign-up/sign-in">Sign Up / Sign In</option>
-                    <option class="contact-form" value="settings">Settings</option>
+            <label class="contact-form" id="subject" for="options">Choose an option you wanna talk about:</label>
+            <select class="contact-form" id="options" id="contact-options">
+                    <option class="contact-form" value="Launches">Launches</option>
+                    <option class="contact-form" value="Specifications">Specifications</option>
+                    <option class="contact-form" value="Solar-System">Solar System</option>
+                    <option class="contact-form" value="Sign-up/Sign-in">Sign Up / Sign In</option>
+                    <option class="contact-form" value="Settings">Settings</option>
             </select>
             <textarea class="contact-form" name="summary" id="summary" placeholder="Type a message here so one of our team can respond to you as soon as possible." required></textarea>
             <button id="submit-button" type="submit" class="cta">Send It!</button>
