@@ -27,7 +27,8 @@ $(document).on('click', '#spacesuit-button', function() {
 });
 
 $(document).on('click', '#food-button', function() {
-    $('#food-txt-hidden').toggle('slow');
+    $('#food-txt-hidden').css('display', 'block');
+    $('#space-food-list').toggle('slow');
     $(this).html() == "Show Less" ? $(this).html('Learn More') : $(this).html('Show Less');
 });
 

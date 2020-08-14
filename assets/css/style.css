@@ -302,6 +302,17 @@ header {
     width: 12%;
 }
 
+#space-food-list {}
+
+#space-food-list li {
+    list-style-type: disc;
+    margin: 5%;
+}
+
+.specs-text {
+    padding: 10%;
+}
+
 
 /* SOLAR SYSTEM */
 
@@ -396,58 +407,6 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
     resize: none;
-}
-
-
-/* SETTINGS */
-
-.Settings-Sections {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.settings-option-container {
-    float: left;
-}
-
-body section .Settings-Sections h3 {
-    text-align: left;
-    margin: 12.5px;
-    font-size: 20px;
-}
-
-.settings-btn-placement {
-    float: right;
-}
-
-.settings-subsections {
-    height: 50px;
-    margin: 10px;
-}
-
-.Settings-Sections p {
-    margin: 5%;
-}
-
-.settings-btn {
-    width: 75px;
-    height: 35px;
-    border-radius: 30px;
-    margin: 5px;
-    padding: 5px;
-    transition: all 500ms ease-in-out;
-}
-
-.settings-inner-btn {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    transition: all 500ms ease-in-out;
-}
-
-.settings-btn-active .settings-inner-btn {
-    margin-left: 37.5px;
 }
 
 @media screen and (max-width:450px) {
