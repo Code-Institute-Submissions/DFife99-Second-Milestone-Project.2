@@ -302,8 +302,6 @@ header {
     width: 12%;
 }
 
-#space-food-list {}
-
 #space-food-list li {
     list-style-type: disc;
     margin: 5%;
