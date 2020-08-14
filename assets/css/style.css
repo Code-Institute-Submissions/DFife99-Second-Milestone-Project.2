@@ -358,6 +358,17 @@ header {
 
 /* CONTACT  */
 
+#success {
+    height: 600px;
+}
+
+#success-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 #contact-form-contain {
     height: 600px;
     text-align: center;

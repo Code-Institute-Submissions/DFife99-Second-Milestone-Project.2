@@ -8,7 +8,10 @@ function sendMail(contactForm) {
         .then(
             function(response) {
                 console.log("SUCCESS", response);
+                $('#success').css('display', 'block');
+                $('#contact-form-contain').css('display', 'none');
             },
+
             function(error) {
                 console.log("FAILED", error);
             }
