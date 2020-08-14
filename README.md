@@ -1,11 +1,86 @@
-## Sources
+# Interstellar
 
-* APIS
-    * SPACEX API
-        * https://docs.spacexdata.com/?version=latest#5fcdb875-914f-4aef-a932-254397cf147a
+This project is all about space, with the growth of companys such as SpaceX and Virgin Galagtic, space travel is getting closer and closer to becoming commercial.
+
+It easily grabs your attention and fascinatiion, with this website you can a little more about our solar system, and get a brief insight of the other planets, and what i like the moon, is how surreal planets like venus look, and jupiters moon Io.
+
+## UX
+
+My UX focus on this project was the re-usability and the learnability. 
+
+With the launches section being updated with upcoming launches and past launches, with a brief insight about the launch and knowing if it succeeded or failed.
+
+With the solar system and the planets moons being able to learn more about, essentially, where we all live.
+
+I tried giving the user as many routes as possible, multiple paths to achieve one goal, for ease of the user.
+
+( I did want to add a settings page which you would be able to see by my earlier commits, giving the user control over the site, with its design, readability. ect. but my skills arent where i need them to be and unfortunately i didnt have the time i wanted to learn to improve my skills )
+
+## Features
+
+### Exisitng Features
+
+* Spacex API 
+    * the api is constantly being updated, therefore the website will be also, with a randomizer assigning pictures to the api content once certain conditions are met, with 9 different pictres being able to be assigned to any object
+
+* Solar System 
+    * with the solar system covering all planets, you can naviagate through each planet and many of the moons, unfortunately some of the planets have up to 78 moons, so i couldnt fit them all in
+
+### Future Features
+
+* Settings
+    * Allowing the user to customize the website with the options providing, with a different font style, font size, animations on and off, and selecting between color schemes
+
+    * adding on to that a  sign up/ login to save these changes and have email updates on announces launches and x amount of time before a launch including the livestreams that show the launches happening
+
+# Technolgies Used 
+
+## CDNS 
+
+* JQuery
+* Font Awesome
+
+## APIS
+
+* SPACEX API
+    * https://docs.spacexdata.com/?version=latest#5fcdb875-914f-4aef-a932-254397cf147a
     
-    * EMAILJS API
-        * https://www.emailjs.com/
+* EMAILJS API
+    * https://www.emailjs.com/
+
+## Testing 
+
+* Tested with the html validator, css validatior and checking the console log and manually testing for the js
+
+* Also had some other people use the website and give me feedback 
+
+## Bugs 
+
+* Image on the home page go onto the next div instead of filling the div it was in
+    * fixed it by making the container relative and the text absolute
+
+* .click for jquery wasnt working and didnt find the div element
+    * This was fixed after a google search, using $(document).on('click','element',function())
+
+* Jquery was overwriting css display:none for the bouncing scroll 
+    * this was fixed by adding an if statement that checks the window width
+
+* CTA was moving under the next div and staying at bottomm left
+    * Fixed by using position absolute with left 50% + transform-50% to center it
+
+* footer icons would all merge together when trying to center align
+    * Fixed by using display:inline/inline-block
+
+* Found a bug with the rocket button not changing the button text if you switch rockets while the text is extended
+    * Fixed by replacing 'this' with  the button class
+
+* A bug where i was unable to push to github
+    * ( a ref head corrupted)
+    * i was unable to find the cause of the issue, but i fixed it by making a new rep and a new file on my computer and attaching that to the new repo, so the first commit on this repo is a big one, but wasnt the first one i made on the project itself
+
+# Credits
+
+## Sources
 
 * Images 
     * https://commons.wikimedia.org/wiki/File:Milky_Way_Galaxy_shimmering_over_Nanga_Parbat,_Pakistan.jpg
@@ -210,29 +285,6 @@
     * For the alternating text on the learn more sections on spec.html (editted for use)
     * $(this).html() == "Show Less" ? $(this).html('Learn More') : $(this).html('Show Less');
 
-## Bugs 
 
-* Image on the home page go onto the next div instead of filling the div it was in
-    * fixed it by making the container relative and the text absolute
-
-* .click for jquery wasnt working and didnt find the div element
-    * This was fixed after a google search, using $(document).on('click','element',function())
-
-* Jquery was overwriting css display:none for the bouncing scroll 
-    * this was fixed by adding an if statement that checks the window width
-
-* CTA was moving under the next div and staying at bottomm left
-    * Fixed by using position absolute with left 50% + transform-50% to center it
-
-* footer icons would all merge together when trying to center align
-    * Fixed by using display:inline/inline-block
-
-* Found a bug with the rocket button not changing the button text if you switch rockets while the text is extended
-    * Fixed by replacing 'this' with  the button class
-
-## Testing 
-
-* Tested with the html validator, css validatior and checking the console log and manually testing for the js
-
-* Also had some other people use the website and give me feedback 
-
+## Acknowledgments 
+* I recieved inspiration for the website from the spacex website itself, Elon Musk is a role model to me, and its great to  watch all the advancments in technology hes made, from space to travel, to cars.
