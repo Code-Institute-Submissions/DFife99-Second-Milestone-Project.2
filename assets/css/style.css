@@ -17,7 +17,9 @@ html {
 }
 
 .DarkMode .big-item a:hover,
-.small-item a:hover {
+.DarkMode .small-item a:hover,
+.DarkMode #upcoming-header:hover,
+.DarkMode #launched-header:hover {
     border-bottom: solid 4px #682860;
     transition: .5s ease-in-out;
 }
@@ -147,12 +149,6 @@ header {
 .big-item a {
     display: inline-block;
 }
-
-
-/*.big-item a,
-.big-item {
-    margin-left: 30px;
-}*/
 
 
 /* CTA */
@@ -343,6 +339,16 @@ header {
 
 
 /* LAUNCHES */
+
+#upcoming-header {
+    float: left;
+    margin-left: 20%;
+}
+
+#launched-header {
+    float: right;
+    margin-right: 20%;
+}
 
 .spacex-api-image {
     height: 300px;
