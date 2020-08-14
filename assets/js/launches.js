@@ -41,13 +41,13 @@ $(document).ready(function() {
                 $('#launched-content').prepend('<div id="spacex-api-' + index + '"></div><p><h3> Mission Name : ' + element.mission_name + '</h3><h4> Rocket Name : ' + element.rocket.rocket_id + '<br> Payload ID : ' + element.rocket.second_stage.payloads[0].payload_id + '<br> Payload Type : ' + element.rocket.second_stage.payloads[0].payload_type + '<br> Nationality : ' + element.rocket.second_stage.payloads[0].nationality + '<br>Launch Date : ' + unixDate + '<br><br> Details : ' + element.details + '</h4></p>')
             }
             if (element.launch_success === null) {
-                $('#spacex-api-' + index).addClass('spacex-api-contain building').html('<img src="assets/images/building.jpg" alt="Building" class="spacex-api-image">')
+                $('#spacex-api-' + index).addClass('spacex-api-contain building').html('<img src="assets/images/building-' + Math.floor((Math.random() * 3) + 1) + '.jpg" alt="Building" class="spacex-api-image">')
             } else {
                 if (element.launch_success === false) {
                     $('#spacex-api-' + index).addClass('spacex-api-contain failed').html('<img src="assets/images/failure.jpg" alt="Failed" class="spacex-api-image">')
                         //$('#launches').prepend('<div class="spacex-api-contain"><img src="assets/images/failure.jpg" alt="Failed" class="spacex-api-image"><div class="failed" id="spacex-api-' + index + '"></div></div')
                 } else {
-                    $('#spacex-api-' + index).addClass('spacex-api-contain starlink').html('<img src="assets/images/starlink.jpg" alt="Starlink" class="spacex-api-image">')
+                    $('#spacex-api-' + index).addClass('spacex-api-contain starlink').html('<img src="assets/images/launched-' + Math.floor((Math.random() * 5) + 1) + '.jpg" alt="Launched" class="spacex-api-image">')
                         //$('#launches').prepend('<div class="spacex-api-contain"><img src="assets/images/starlink.jpg" alt="Starlink" class="spacex-api-image"><div class="starlink" id="spacex-api-' + index + '"></div></div>')
                 }
             }
