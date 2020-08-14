@@ -41,6 +41,17 @@ $(document).on('click', '.carousel-2', function() {
     $('#rocket-2').css('display', 'block');
 });
 
+// SOLAR BUTTON 
+
+$(document).on('click', '.planet-button', function() {
+    $('.planet-txt').toggle(1000);
+    $(this).html() == "Show Less" ? $('.planet-button').html('Learn More') : $('.planet-button').html('Show Less')
+});
+$(document).on('click', '.moon-button', function() {
+    $('.moon-text').toggle(1000);
+    $(this).html() == "Show Less" ? $('.moon-button').html('Learn More') : $('.moon-button').html('Show Less')
+});
+
 $(document).on('click', '.planet-carousel-1', function() {
     $('#planet-1').css('display', 'block');
     $('#planet-2').css('display', 'none');

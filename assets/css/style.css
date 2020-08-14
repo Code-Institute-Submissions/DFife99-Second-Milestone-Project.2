@@ -323,6 +323,7 @@ header {
     text-align: center;
     margin: 10%;
     font-size: medium;
+    display: none;
 }
 
 .solar-dis {
