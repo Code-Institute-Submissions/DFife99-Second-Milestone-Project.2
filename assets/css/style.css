@@ -3,9 +3,63 @@ html {
     margin: 0;
 }
 
-body {
+.DarkMode {
     background-color: #000;
     color: #fff;
+}
+
+.DarkMode .a-styling {
+    color: #fff;
+}
+
+.DarkMode .active {
+    border-bottom: solid 4px #682860;
+}
+
+.DarkMode .big-item a:hover,
+.small-item a:hover {
+    border-bottom: solid 4px #682860;
+    transition: .5s ease-in-out;
+}
+
+.DarkMode .cta {
+    background-color: #682860;
+    color: #e9e5ee
+}
+
+.DarkMode .cta:hover {
+    background-color: #e9e5ee;
+    color: #682860;
+    transition: .5s ease-in-out;
+}
+
+.DarkMode .header-dis,
+#arrow,
+#scroll-text {
+    color: white;
+}
+
+.DarkMode .footer {
+    border-color: white;
+}
+
+.DarkMode .fa-circle {
+    color: #838383;
+}
+
+.DarkMode .current {
+    color: #e9e5ee;
+}
+
+.DarkMode .settings-btn {
+    background: #838383;
+}
+
+.DarkMode .settings-inner-btn {
+    background: #fff;
+}
+
+body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,16 +70,16 @@ ul {
 
 .a-styling {
     text-decoration: none;
-    color: #fff;
 }
 
 body li {
     list-style-type: none;
 }
 
-.font-white {
+
+/*.font-white {
     color: #fff;
-}
+}*/
 
 h1,
 h2,
@@ -34,16 +88,6 @@ h4,
 h5 {
     font-family: 'Orbitron', sans-serif;
     text-align: center;
-}
-
-.active {
-    border-bottom: solid 4px #682860;
-}
-
-.big-item a:hover,
-.small-item a:hover {
-    border-bottom: solid 4px #682860;
-    transition: .5s ease-in-out;
 }
 
 
@@ -102,11 +146,9 @@ header {
 /* CTA */
 
 .cta {
-    background-color: #682860;
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     border-radius: 20px;
-    color: #e9e5ee;
     padding: 10px;
     position: absolute;
     left: 50%;
@@ -114,12 +156,6 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     border: none;
-}
-
-.cta:hover {
-    background-color: #e9e5ee;
-    color: #682860;
-    transition: .5s ease-in-out;
 }
 
 
@@ -141,7 +177,6 @@ header {
 #arrow,
 #scroll-text {
     position: absolute;
-    color: white;
     font-size: 40px;
     left: 0;
     right: 0;
@@ -195,7 +230,7 @@ header {
     padding-right: 5%;
     padding-left: 5%;
     vertical-align: middle;
-    border-top: solid 3.5px white;
+    border-top: solid 3.5px;
 }
 
 .footer-sections {
@@ -248,13 +283,8 @@ header {
 
 .fa-circle {
     font-size: 30px;
-    color: #838383;
     padding: 10px;
     cursor: pointer;
-}
-
-.current {
-    color: #e9e5ee;
 }
 
 
@@ -336,6 +366,63 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
     resize: none;
+}
+
+
+/* SETTINGS */
+
+.Settings-Sections {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.settings-option-container {
+    float: left;
+}
+
+body section .Settings-Sections h3 {
+    text-align: left;
+    margin: 12.5px;
+    font-size: 20px;
+}
+
+.settings-btn-placement {
+    float: right;
+}
+
+.settings-subsections {
+    height: 50px;
+    margin: 10px;
+}
+
+.Settings-Sections p {
+    margin: 5%;
+}
+
+.settings-btn {
+    width: 75px;
+    height: 35px;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 5px;
+    transition: all 500ms ease-in-out;
+}
+
+.settings-inner-btn {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    transition: all 500ms ease-in-out;
+}
+
+.settings-btn-active {
+    background: #fff;
+}
+
+.settings-btn-active .settings-inner-btn {
+    background: #682860;
+    margin-left: 37.5px;
 }
 
 @media screen and (max-width:450px) {
