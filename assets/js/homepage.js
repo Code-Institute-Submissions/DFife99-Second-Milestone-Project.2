@@ -1,17 +1,14 @@
 var w = window.innerWidth; // found on a google search
-
-function scroll() {
-    $(window).bind('scroll', function() { //  Found scroll selector online 
-        if ($(window).scrollTop() > 50) {
-            $('.scroll').slideUp('slow');
-        } else {
-            $('.scroll').slideDown('slow');
-        }
-    });
-}
-
 if (w > 800) {
-    scroll();
+    function scroll() {
+        $(window).bind('scroll', function() { //  Found scroll selector online 
+            if ($(window).scrollTop() > 50) {
+                $('.scroll').slideUp('slow');
+            } else {
+                $('.scroll').slideDown('slow');
+            }
+        });
+    }
 };
 
 $(document).on('click', '#dropdown', function() {

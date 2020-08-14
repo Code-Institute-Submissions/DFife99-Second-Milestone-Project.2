@@ -509,6 +509,38 @@ body section .Settings-Sections h3 {
         display: inline-block;
         padding: 10px;
     }
+    /* LAUNCHES */
+    .spacex-api-image {
+        height: 200px;
+    }
+    /* SPECS */
+    .spec-contain {
+        height: 200px;
+    }
+    .specs-header,
+    .carousel-movement .fa-circle,
+    .planet-header {
+        font-size: large;
+    }
+    .specs-button {
+        top: 15px;
+        width: 20%;
+    }
+    /* SOLAR SYSTEM */
+    .planet-dis {
+        height: 200px;
+    }
+    .planet-txt {
+        font-size: medium;
+    }
+    .carousel-movement .fa-circle {
+        padding: 5px;
+    }
+    /* CONTACT */
+    #subject {
+        font-size: medium;
+        margin-left: 5%;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -572,5 +604,9 @@ body section .Settings-Sections h3 {
 @media screen and (min-width: 1200px) {
     .big-item {
         padding: 20px;
+    }
+    /* LAUNCHES */
+    .spacex-api-image {
+        height: 400px
     }
 }
