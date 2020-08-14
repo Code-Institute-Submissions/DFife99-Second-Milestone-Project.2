@@ -59,6 +59,18 @@ html {
     background: #fff;
 }
 
+.DarkMode .settings-btn-active {
+    background: #fff;
+}
+
+.DarkMode .settings-btn-active .settings-inner-btn {
+    background: #682860;
+}
+
+.DarkMode #dropdown {
+    border-color: #e9e5ee;
+}
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -416,12 +428,7 @@ body section .Settings-Sections h3 {
     transition: all 500ms ease-in-out;
 }
 
-.settings-btn-active {
-    background: #fff;
-}
-
 .settings-btn-active .settings-inner-btn {
-    background: #682860;
     margin-left: 37.5px;
 }
 
@@ -432,8 +439,8 @@ body section .Settings-Sections h3 {
     }
     #dropdown {
         display: block;
-        border-top: #e9e5ee solid 4px;
-        border-bottom: #e9e5ee solid 4px;
+        border-top: solid 4px;
+        border-bottom: solid 4px;
         height: 64px;
     }
     .dropdown-title {
@@ -519,8 +526,8 @@ body section .Settings-Sections h3 {
     }
     #dropdown {
         display: block;
-        border-top: #e9e5ee solid 4px;
-        border-bottom: #e9e5ee solid 4px;
+        border-top: solid 4px;
+        border-bottom: solid 4px;
         height: 64px;
     }
     .dropdown-title {
